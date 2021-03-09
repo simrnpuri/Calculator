@@ -58,7 +58,7 @@
             android:layout_marginRight="0.1dp"
             android:layout_weight="1"
             android:background="@android:color/black"
-            android:text="AC"
+            android:text="()"
             android:textColor="@android:color/holo_red_light"
             android:textSize="30sp"
             app:backgroundTint="#514F4F" />
@@ -291,7 +291,7 @@
             app:backgroundTint="#757373" />
 
         <Button
-            android:id="@+id/button_dot"
+            android:id="@+id/button_decimal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginTop="0.1dp"
