@@ -9,7 +9,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.math.BigDecimal;
-//import javax.script.ScriptEngineManager;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
@@ -46,15 +45,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button buttonDecimal;
     TextView textViewDisplay;
 
-    //ScriptEngine scriptEngine;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //scriptEngine = new ScriptEngineManager().getEngineByName("rhino");
+        initializeViewVariables();
+        setOnClickListeners();
     }
 
     private void initializeViewVariables()
@@ -342,7 +340,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 saveLastExpression(input);
             }
-            //result = scriptEngine.eval(temp.replaceAll("%", "/100").replaceAll("x", "*").replaceAll("[^\\x00-\\x7F]", "/")).toString();
             BigDecimal decimal = new BigDecimal(result);
             result = decimal.setScale(8, BigDecimal.ROUND_HALF_UP).toPlainString();
             equalClicked = true;

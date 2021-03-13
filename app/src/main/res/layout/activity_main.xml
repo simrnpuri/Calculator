@@ -19,9 +19,9 @@
 
         <TextView
             android:id="@+id/textView_input_numbers"
-            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="256dp"
+            android:layout_marginTop="25dp"
             android:layout_marginRight="10dp"
             android:gravity="end"
             android:textColor="@color/white"
